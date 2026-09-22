@@ -13,4 +13,16 @@ classDiagram
         +calcola_potenza_effettiva() int
         +esegui_colpo() str
     }
+
+    class Personaggio {
+        +id: int
+        +nome: str
+    }
+
+    class Abilita {
+        +id: int
+        +nome_abilita: str
+        +danno_base: int
+        +costo_mana: int
+    }
 ```

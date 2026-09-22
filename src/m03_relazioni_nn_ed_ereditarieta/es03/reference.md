@@ -14,4 +14,15 @@ classDiagram
         +verbalizza_voto(voto: int) bool
         +is_superato() bool
     }
+
+    class Studente {
+        +matricola: int
+        +nome: str
+    }
+
+    class Corso {
+        +codice_corso: str
+        +titolo: str
+        +cfu: int
+    }
 ```
