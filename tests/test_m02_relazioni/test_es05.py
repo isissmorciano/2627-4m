@@ -1,4 +1,4 @@
-from src.m02_relazioni_1_1_e_1_n.es05_student import Carrello, ElementoCarrello
+from src.m02_relazioni_1_1_e_1_n.es05.student import Carrello, ElementoCarrello
 
 
 def test_calcolo_totale_carrello():

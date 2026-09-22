@@ -1,4 +1,4 @@
-from src.m01_prima_entita_e_dataclass.es03_reference import Personaggio
+from src.m01_prima_entita_e_dataclass.es03.reference import Personaggio
 
 
 def test_danno_parziale():

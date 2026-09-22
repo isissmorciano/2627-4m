@@ -1,4 +1,4 @@
-from src.m02_relazioni_1_1_e_1_n.es06_student import ClasseScolastica, Studente
+from src.m02_relazioni_1_1_e_1_n.es06.student import ClasseScolastica, Studente
 
 
 def test_iscrizione_con_capienza():

@@ -1,4 +1,4 @@
-from src.m02_relazioni_1_1_e_1_n.es04_reference import Personaggio, Inventario, Oggetto
+from src.m02_relazioni_1_1_e_1_n.es04.reference import Personaggio, Inventario, Oggetto
 
 
 def test_raccolta_senza_zaino_fallisce():

@@ -1,4 +1,4 @@
-from src.m04_persistenza_dati_json.es03_student import (
+from src.m04_persistenza_dati_json.es03.student import (
     Personaggio,
     Guerriero,
     Mago,

@@ -1,4 +1,4 @@
-from src.m01_prima_entita_e_dataclass.es07_student import BiciElettrica
+from src.m01_prima_entita_e_dataclass.es07.student import BiciElettrica
 
 
 def test_creazione_default():

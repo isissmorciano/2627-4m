@@ -1,4 +1,4 @@
-from src.m04_persistenza_dati_json.es02_student import (
+from src.m04_persistenza_dati_json.es02.student import (
     Inventario,
     Oggetto,
     salva_inventario,

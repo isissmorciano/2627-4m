@@ -1,4 +1,4 @@
-from src.m01_prima_entita_e_dataclass.es05_student import TesseraAbbonamento
+from src.m01_prima_entita_e_dataclass.es05.student import TesseraAbbonamento
 
 
 def test_creazione_tessera_default():

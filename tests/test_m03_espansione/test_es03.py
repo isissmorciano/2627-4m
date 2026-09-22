@@ -1,4 +1,4 @@
-from src.m03_relazioni_nn_ed_ereditarieta.es03_student import Studente, Corso, Iscrizione
+from src.m03_relazioni_nn_ed_ereditarieta.es03.student import Studente, Corso, Iscrizione
 
 
 def test_verbalizzazione_valida():

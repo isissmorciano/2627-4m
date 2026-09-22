@@ -1,4 +1,4 @@
-from src.m04_persistenza_dati_json.es02_reference import (
+from src.m04_persistenza_dati_json.es02.reference import (
     Inventario,
     Oggetto,
     salva_inventario,

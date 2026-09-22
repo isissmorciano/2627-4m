@@ -1,4 +1,4 @@
-from src.m02_relazioni_1_1_e_1_n.es08_student import Squadra, Giocatore
+from src.m02_relazioni_1_1_e_1_n.es08.student import Squadra, Giocatore
 
 
 def test_liste_giocatori_indipendenti():

@@ -1,4 +1,4 @@
-from src.m03_relazioni_nn_ed_ereditarieta.es02_reference import Personaggio, Abilita, AbilitaAppresa
+from src.m03_relazioni_nn_ed_ereditarieta.es02.reference import Personaggio, Abilita, AbilitaAppresa
 
 
 def test_calcolo_potenza_effettiva():

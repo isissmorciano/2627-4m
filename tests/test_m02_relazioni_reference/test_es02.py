@@ -1,4 +1,4 @@
-from src.m02_relazioni_1_1_e_1_n.es02_reference import Paziente, CartellaClinica
+from src.m02_relazioni_1_1_e_1_n.es02.reference import Paziente, CartellaClinica
 
 
 def test_assegnazione_valida():

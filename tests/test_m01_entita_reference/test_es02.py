@@ -1,5 +1,5 @@
 from dataclasses import is_dataclass
-from src.m01_prima_entita_e_dataclass.es02_reference import Personaggio
+from src.m01_prima_entita_e_dataclass.es02.reference import Personaggio
 
 
 def test_e_una_dataclass():

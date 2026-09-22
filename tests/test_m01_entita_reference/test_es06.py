@@ -1,4 +1,4 @@
-from src.m01_prima_entita_e_dataclass.es06_reference import ArticoloMagazzino
+from src.m01_prima_entita_e_dataclass.es06.reference import ArticoloMagazzino
 
 
 def test_creazione_articolo_default():

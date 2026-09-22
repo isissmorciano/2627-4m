@@ -1,4 +1,4 @@
-from src.m01_prima_entita_e_dataclass.es07_reference import BiciElettrica
+from src.m01_prima_entita_e_dataclass.es07.reference import BiciElettrica
 
 
 def test_creazione_default():

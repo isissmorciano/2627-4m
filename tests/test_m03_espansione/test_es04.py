@@ -1,4 +1,4 @@
-from src.m03_relazioni_nn_ed_ereditarieta.es04_student import Personaggio, Guerriero, Mago
+from src.m03_relazioni_nn_ed_ereditarieta.es04.student import Personaggio, Guerriero, Mago
 
 
 def test_guerriero_eredita_da_personaggio():

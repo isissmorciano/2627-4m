@@ -1,4 +1,4 @@
-from src.m04_persistenza_dati_json.es04_reference import (
+from src.m04_persistenza_dati_json.es04.reference import (
     Utente,
     Tessera,
     salva_utente,

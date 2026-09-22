@@ -1,4 +1,4 @@
-from src.m02_relazioni_1_1_e_1_n.es03_student import Inventario, Oggetto
+from src.m02_relazioni_1_1_e_1_n.es03.student import Inventario, Oggetto
 
 
 def test_lista_oggetti_indipendente_tra_istanze():

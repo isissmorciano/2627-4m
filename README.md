@@ -53,13 +53,13 @@ Il corso è organizzato in 7 moduli progressivi:
 
 ## 📄 Struttura di un Esercizio
 
-All'interno di ciascun modulo gli esercizi presentano una struttura standard:
+All'interno di ciascun modulo, ogni esercizio ha una cartella `esXX/` con una struttura standard:
 
-- `esXX_description.md`: Capitolato del committente, User Story, Criteri di Accettazione, istruzioni ed **Esempio di Esecuzione del `main()`**.
-- `esXX_student.md`: File di design in cui lo studente redige i diagrammi Mermaid (`erDiagram`, `classDiagram`, `sequenceDiagram`).
-- `esXX_student.py`: Scheletro Python da implementare con docstring, metodi e funzione `main()`.
-- `esXX_reference.md`: Soluzione modello del docente per i diagrammi Mermaid.
-- `esXX_reference.py`: Soluzione modello del docente per il codice Python.
+- `description.md`: Capitolato del committente, User Story, Criteri di Accettazione, istruzioni ed **Esempio di Esecuzione del `main()`**.
+- `student.md`: File di design in cui lo studente redige i diagrammi Mermaid (`erDiagram`, `classDiagram`, `sequenceDiagram`).
+- `student.py`: Scheletro Python da implementare con docstring, metodi e funzione `main()`.
+- `reference.md`: Soluzione modello del docente per i diagrammi Mermaid.
+- `reference.py`: Soluzione modello del docente per il codice Python.
 
 Nei progetti finali (`m06`), ogni cartella di progetto racchiude l'intera suite: `description.md`, `design_student.md`, `modello_student.py`, `gestore_student.py` e i rispettivi file `_reference`.
 

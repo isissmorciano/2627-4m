@@ -1,4 +1,4 @@
-from src.m02_relazioni_1_1_e_1_n.es07_student import Hotel, Stanza
+from src.m02_relazioni_1_1_e_1_n.es07.student import Hotel, Stanza
 
 
 def test_prenotazione_camera_disponibile():

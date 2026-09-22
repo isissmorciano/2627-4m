@@ -1,4 +1,4 @@
-from src.m04_persistenza_dati_json.es01_reference import (
+from src.m04_persistenza_dati_json.es01.reference import (
     Personaggio,
     salva_personaggio,
     carica_personaggio,

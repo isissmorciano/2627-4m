@@ -1,4 +1,4 @@
-from src.m03_relazioni_nn_ed_ereditarieta.es07_student import Studente, Docente, Corso, iscrivi_studente_a_corso, Utente
+from src.m03_relazioni_nn_ed_ereditarieta.es07.student import Studente, Docente, Corso, iscrivi_studente_a_corso, Utente
 
 
 def test_gerarchia_utenti():

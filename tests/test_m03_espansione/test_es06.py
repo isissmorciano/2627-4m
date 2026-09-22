@@ -1,4 +1,4 @@
-from src.m03_relazioni_nn_ed_ereditarieta.es06_student import CartaCredito, BonificoBancario
+from src.m03_relazioni_nn_ed_ereditarieta.es06.student import CartaCredito, BonificoBancario
 
 
 def test_carta_credito_plafond_sufficiente():

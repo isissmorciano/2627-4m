@@ -1,4 +1,4 @@
-from src.m01_prima_entita_e_dataclass.es08_reference import CameraHotel
+from src.m01_prima_entita_e_dataclass.es08.reference import CameraHotel
 
 
 def test_check_in_su_camera_libera():

@@ -1,4 +1,4 @@
-from src.m03_relazioni_nn_ed_ereditarieta.es08_reference import Veicolo, Furgone, Motore
+from src.m03_relazioni_nn_ed_ereditarieta.es08.reference import Veicolo, Furgone, Motore
 
 
 def test_furgone_usa_super_e_ha_motore():

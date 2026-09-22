@@ -1,4 +1,4 @@
-from src.m02_relazioni_1_1_e_1_n.es01_student import Personaggio, Inventario
+from src.m02_relazioni_1_1_e_1_n.es01.student import Personaggio, Inventario
 
 
 def test_stato_iniziale_scollegato():

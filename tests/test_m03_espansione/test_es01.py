@@ -1,4 +1,4 @@
-from src.m03_relazioni_nn_ed_ereditarieta.es01_student import Personaggio, Abilita, AbilitaAppresa
+from src.m03_relazioni_nn_ed_ereditarieta.es01.student import Personaggio, Abilita, AbilitaAppresa
 
 
 def test_creazione_legame_nn():

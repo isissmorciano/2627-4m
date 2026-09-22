@@ -1,4 +1,4 @@
-from src.m03_relazioni_nn_ed_ereditarieta.es05_student import Personaggio, Guerriero, Mago
+from src.m03_relazioni_nn_ed_ereditarieta.es05.student import Personaggio, Guerriero, Mago
 
 
 def test_attacco_guerriero_polimorfico():

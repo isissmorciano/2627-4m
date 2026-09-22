@@ -1,4 +1,4 @@
-from src.m01_prima_entita_e_dataclass.es01_student import Personaggio
+from src.m01_prima_entita_e_dataclass.es01.student import Personaggio
 
 
 def test_creazione_istanza_valori_default():

@@ -1,4 +1,4 @@
-from src.m01_prima_entita_e_dataclass.es04_student import ContoCorrente
+from src.m01_prima_entita_e_dataclass.es04.student import ContoCorrente
 
 
 def test_creazione_conto_saldo_default():
