@@ -137,19 +137,6 @@ I test reference verificano le soluzioni complete del docente (`esXX_reference.p
   pytest tests/test_m01_entita_reference tests/test_m02_relazioni_reference tests/test_m03_espansione_reference tests/test_m04_persistenza_reference tests/test_m06_progetti_reference
   ```
 
----
-
-## 🧹 Qualità e Stile del Codice (Ruff)
-
-Prima di effettuare un commit, assicurarsi che il codice rispetti gli standard PEP 8 tramite **Ruff**:
-
-```bash
-# Analisi statica (linting):
-ruff check .
-
-# Formattazione automatica:
-ruff format .
-```
 
 ---
 
