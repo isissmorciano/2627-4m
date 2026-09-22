@@ -2,3 +2,7 @@ temp.md
 repomix*
 .git
 .vscode
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
