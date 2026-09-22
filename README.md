@@ -85,7 +85,7 @@ source .venv/bin/activate
 
 ### 2. Installazione dipendenze di qualità
 ```bash
-pip install pytest ruff
+pip install pytest
 ```
 
 ---
