@@ -134,7 +134,7 @@ I test reference verificano le soluzioni complete del docente (`esXX_reference.p
 
 * **Eseguire tutti i test reference dell'anno:**
   ```bash
-  pytest tests/test_m01_entita_reference tests/test_m02_relazioni_reference tests/test_m03_espansione_reference tests/test_m04_persistenza_reference tests/test_m06_progetti_reference
+  pytest --import-mode=importlib tests/test_m01_entita_reference tests/test_m02_relazioni_reference tests/test_m03_espansione_reference tests/test_m04_persistenza_reference tests/test_m06_progetti_reference
   ```
 
 
