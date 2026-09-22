@@ -30,7 +30,7 @@ class BiciElettrica:
 
 def main() -> None:
     print("=== SIMULAZIONE BIKE SHARING GREENRIDE ===")
-    bici = BiciElettrica(codice_telaio="BIKE-042", modello="CityPro", batteria_percentuale=25)
+    bici: BiciElettrica = BiciElettrica(codice_telaio="BIKE-042", modello="CityPro", batteria_percentuale=25)
     print(
         f"Bici {bici.codice_telaio} ({bici.modello}) | Batteria: {bici.batteria_percentuale}% | Noleggiata: {bici.is_noleggiata}\n"
     )

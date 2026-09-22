@@ -19,8 +19,8 @@ class Mago(Personaggio):
 
 def main() -> None:
     print("=== GERARCHIA EROI (IS-A) ===")
-    conan = Guerriero(1, "Conan", forza=15, punti_vita=120)
-    merlino = Mago(2, "Merlino", mana=50, punti_vita=80)
+    conan: Guerriero = Guerriero(1, "Conan", forza=15, punti_vita=120)
+    merlino: Mago = Mago(2, "Merlino", mana=50, punti_vita=80)
 
     print(f"Guerriero creato: {conan.nome} (ID: {conan.id}, PV: {conan.punti_vita}, Forza: {conan.forza})")
     print(f"Mago creato: {merlino.nome} (ID: {merlino.id}, PV: {merlino.punti_vita}, Mana: {merlino.mana})\n")

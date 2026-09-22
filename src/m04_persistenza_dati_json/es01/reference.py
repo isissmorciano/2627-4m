@@ -29,15 +29,19 @@ def carica_personaggio(percorso: str) -> Personaggio:
 def main() -> None:
     print("=== CICLO DI PERSISTENZA JSON: SINGOLA ENTITA ===")
     file_salvataggio = "salvataggio_eroe.json"
-    eroe_originale = Personaggio(id=1, nome="Aragorn", livello=5, punti_vita=80)
+    eroe_originale: Personaggio = Personaggio(id=1, nome="Aragorn", livello=5, punti_vita=80)
 
-    print(f"Eroe prima del salvataggio: {eroe_originale.nome} (Livello: {eroe_originale.livello}, PV: {eroe_originale.punti_vita})")
+    print(
+        f"Eroe prima del salvataggio: {eroe_originale.nome} (Livello: {eroe_originale.livello}, PV: {eroe_originale.punti_vita})"
+    )
     salva_personaggio(eroe_originale, file_salvataggio)
     print(f"Salvataggio su '{file_salvataggio}' completato!\n")
 
     print("--- Riavvio simulato: ricaricamento da disco ---")
     eroe_ricaricato = carica_personaggio(file_salvataggio)
-    print(f"Eroe ricaricato con successo: {eroe_ricaricato.nome} (Livello: {eroe_ricaricato.livello}, PV: {eroe_ricaricato.punti_vita})")
+    print(
+        f"Eroe ricaricato con successo: {eroe_ricaricato.nome} (Livello: {eroe_ricaricato.livello}, PV: {eroe_ricaricato.punti_vita})"
+    )
 
     eroe_ricaricato.subisci_danno(20)
     print(f"Verifica metodi: {eroe_ricaricato.nome} subisce 20 danni...")

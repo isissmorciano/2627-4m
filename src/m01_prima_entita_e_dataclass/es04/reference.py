@@ -27,7 +27,7 @@ class ContoCorrente:
 
 def main() -> None:
     print("=== GESTIONALE CONTO CORRENTE ===")
-    conto = ContoCorrente(iban="IT99X0123456789", titolare="Mario Rossi")
+    conto: ContoCorrente = ContoCorrente(iban="IT99X0123456789", titolare="Mario Rossi")
     print(conto.mostra_stato() + "\n")
 
     esito_dep = conto.deposita(250.0)

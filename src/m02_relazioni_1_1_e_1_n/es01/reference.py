@@ -29,8 +29,8 @@ class Personaggio:
 
 def main() -> None:
     print("=== ASSEGNAZIONE RELAZIONE 1:1 ===")
-    eroe = Personaggio(id=1, nome="Aragorn")
-    zaino = Inventario(id=101, capacita_slot=30)
+    eroe: Personaggio = Personaggio(id=1, nome="Aragorn")
+    zaino: Inventario = Inventario(id=101, capacita_slot=30)
 
     print("Stato iniziale:")
     print(f"- Eroe: {eroe.nome} (Zaino: {eroe.inventario})")
@@ -41,8 +41,9 @@ def main() -> None:
     print("Collegamento completato con successo!\n")
 
     print("Verifica navigazione bidirezionale:")
-    print(f"- Da Eroe a Zaino: {eroe.nome} possiede uno zaino da {eroe.inventario.capacita_slot} slot.")
-    print(f"- Da Zaino a Eroe: Lo zaino #{zaino.id} appartiene a: {zaino.proprietario.nome}")
+    if eroe.inventario is not None and zaino.proprietario is not None:
+        print(f"- Da Eroe a Zaino: {eroe.nome} possiede uno zaino da {eroe.inventario.capacita_slot} slot.")
+        print(f"- Da Zaino a Eroe: Lo zaino #{zaino.id} appartiene a: {zaino.proprietario.nome}")
 
 
 if __name__ == "__main__":

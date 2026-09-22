@@ -28,19 +28,23 @@ class AbilitaAppresa:
 
 def main() -> None:
     print("=== RELAZIONE MOLTI-A-MOLTI: EROI ED ABILITA ===")
-    aragorn = Personaggio(1, "Aragorn")
-    merlino = Personaggio(2, "Merlino")
-    fuoco = Abilita(10, "Palla di Fuoco", costo_mana=25)
+    aragorn: Personaggio = Personaggio(1, "Aragorn")
+    merlino: Personaggio = Personaggio(2, "Merlino")
+    fuoco: Abilita = Abilita(10, "Palla di Fuoco", costo_mana=25)
 
-    link_aragorn = AbilitaAppresa(101, aragorn, fuoco, livello_padronanza=1)
-    link_merlino = AbilitaAppresa(102, merlino, fuoco, livello_padronanza=3)
+    link_aragorn: AbilitaAppresa = AbilitaAppresa(101, aragorn, fuoco, livello_padronanza=1)
+    link_merlino: AbilitaAppresa = AbilitaAppresa(102, merlino, fuoco, livello_padronanza=3)
 
     print(f"Eroi: {aragorn.nome} (id={aragorn.id}), {merlino.nome} (id={merlino.id})")
     print(f"Abilita create: {fuoco.nome_abilita} (id={fuoco.id}, Mana: {fuoco.costo_mana})\n")
 
     print("Assegnazione N:N tramite AbilitaAppresa:")
-    print(f"- {link_aragorn.personaggio.nome} apprende {link_aragorn.abilita.nome_abilita} a livello {link_aragorn.livello_padronanza}")
-    print(f"- {link_merlino.personaggio.nome} apprende {link_merlino.abilita.nome_abilita} a livello {link_merlino.livello_padronanza}\n")
+    print(
+        f"- {link_aragorn.personaggio.nome} apprende {link_aragorn.abilita.nome_abilita} a livello {link_aragorn.livello_padronanza}"
+    )
+    print(
+        f"- {link_merlino.personaggio.nome} apprende {link_merlino.abilita.nome_abilita} a livello {link_merlino.livello_padronanza}\n"
+    )
 
     link_merlino.potenzia()
     print("Merlino si allena e potenzia l'abilita!")

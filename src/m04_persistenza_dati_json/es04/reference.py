@@ -38,7 +38,7 @@ def carica_utente(percorso: str) -> Utente:
 def main() -> None:
     print("=== DETECTIVE DELLA PERSISTENZA: RICOSTRUZIONE COMPLETA ===")
     file_path = "utente_tessera.json"
-    utente_originale = Utente(1, "Mario Rossi", Tessera("T-999", ingressi=5))
+    utente_originale: Utente = Utente(1, "Mario Rossi", Tessera("T-999", ingressi=5))
 
     salva_utente(utente_originale, file_path)
     print("Salvataggio completato!\n")

@@ -42,8 +42,8 @@ def iscrivi_studente_a_corso(id_iscrizione: int, studente: Studente, corso: Cors
 
 def main() -> None:
     print("=== PIATTAFORMA CORSI: PIPELINE COMPLETA ===")
-    studente = Studente(1, "Marco", "marco@email.com", credito_disponibile=100.0)
-    corso_python = Corso("PY-01", "Python Avanzato", 70.0)
+    studente: Studente = Studente(1, "Marco", "marco@email.com", credito_disponibile=100.0)
+    corso_python: Corso = Corso("PY-01", "Python Avanzato", 70.0)
 
     print(f"Studente: {studente.nome} (Credito iniziale: {studente.credito_disponibile:.2f}€)")
     print(f"Corso: {corso_python.titolo} (Prezzo: {corso_python.prezzo_iscrizione:.2f}€)\n")
@@ -53,7 +53,7 @@ def main() -> None:
     print(f"Credito residuo studente: {studente.credito_disponibile:.2f}€")
 
     # Tentativo secondo corso senza credito
-    corso_cloud = Corso("CL-02", "Cloud Architecture", 50.0)
+    corso_cloud: Corso = Corso("CL-02", "Cloud Architecture", 50.0)
     isc2 = iscrivi_studente_a_corso(102, studente, corso_cloud, "2026-10-16")
     print(f"Tentativo acquisto corso Cloud (50€) -> Esito: {isc2 is not None} (Credito insufficiente)")
 

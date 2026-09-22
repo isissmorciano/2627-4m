@@ -32,7 +32,7 @@ class ArticoloMagazzino:
 
 def main() -> None:
     print("=== GESTIONE SCORTE MAGAZZINO ===")
-    art = ArticoloMagazzino(
+    art: ArticoloMagazzino = ArticoloMagazzino(
         codice_sku="SKU-TECH-01",
         nome="Tastiera Meccanica",
         prezzo_unitario=75.0,

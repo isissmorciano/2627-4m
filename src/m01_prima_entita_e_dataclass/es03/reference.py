@@ -25,7 +25,7 @@ class Personaggio:
 
 def main() -> None:
     print("=== SIMULAZIONE COMBATTIMENTO ED INVARIANTI ===")
-    eroe = Personaggio(id=1, nome="Conan")
+    eroe: Personaggio = Personaggio(id=1, nome="Conan")
     print(f"Eroe creato: {eroe.nome} (PV: {eroe.punti_vita}/{eroe.punti_vita_max}, Vivo: {eroe.is_vivo()})\n")
 
     eroe.subisci_danno(40)

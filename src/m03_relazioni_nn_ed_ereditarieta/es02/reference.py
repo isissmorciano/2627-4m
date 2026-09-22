@@ -32,10 +32,10 @@ class AbilitaAppresa:
 
 def main() -> None:
     print("=== ESECUZIONE ABILITA APPRESA N:N ===")
-    fulmine = Abilita(id=1, nome_abilita="Fulmine", danno_base=20, costo_mana=15)
-    thor = Personaggio(id=10, nome="Thor")
+    fulmine: Abilita = Abilita(id=1, nome_abilita="Fulmine", danno_base=20, costo_mana=15)
+    thor: Personaggio = Personaggio(id=10, nome="Thor")
 
-    link = AbilitaAppresa(id=100, personaggio=thor, abilita=fulmine, livello_padronanza=3)
+    link: AbilitaAppresa = AbilitaAppresa(id=100, personaggio=thor, abilita=fulmine, livello_padronanza=3)
 
     print(f"Abilita creata: {fulmine.nome_abilita} (Danno Base: {fulmine.danno_base}, Costo: {fulmine.costo_mana})\n")
     print(f"Link: {link.personaggio.nome} apprende {link.abilita.nome_abilita} a livello {link.livello_padronanza}")

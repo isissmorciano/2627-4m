@@ -16,8 +16,8 @@ class Personaggio:
 
 def main() -> None:
     print("=== CREAZIONE EROI RPG ===")
-    eroe1 = Personaggio(1, "Aragorn", livello=5)
-    eroe2 = Personaggio(2, "Legolas")
+    eroe1: Personaggio = Personaggio(1, "Aragorn", livello=5)
+    eroe2: Personaggio = Personaggio(2, "Legolas")
 
     print(eroe1)
     print(eroe2)

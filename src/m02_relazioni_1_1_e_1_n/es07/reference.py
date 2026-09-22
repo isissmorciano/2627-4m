@@ -33,7 +33,7 @@ class Hotel:
 
 def main() -> None:
     print("=== GESTIONALE HOTEL (PIPELINE 1:N) ===")
-    hotel = Hotel("Hotel Bellavista")
+    hotel: Hotel = Hotel("Hotel Bellavista")
     hotel.aggiungi_stanza(Stanza(101, "Singola", 60.0))
     hotel.aggiungi_stanza(Stanza(102, "Doppia", 100.0))
     hotel.aggiungi_stanza(Stanza(103, "Doppia", 100.0))

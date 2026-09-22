@@ -33,9 +33,9 @@ class Carrello:
 
 def main() -> None:
     print("=== E-COMMERCE: CARRELLO SPESA (1:N) ===")
-    carrello = Carrello(id=1)
-    e1 = ElementoCarrello(101, "Mouse", 2, 25.0)
-    e2 = ElementoCarrello(102, "Tastiera", 1, 70.0)
+    carrello: Carrello = Carrello(id=1)
+    e1: ElementoCarrello = ElementoCarrello(101, "Mouse", 2, 25.0)
+    e2: ElementoCarrello = ElementoCarrello(102, "Tastiera", 1, 70.0)
 
     carrello.aggiungi_elemento(e1)
     carrello.aggiungi_elemento(e2)

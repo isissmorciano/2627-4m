@@ -34,10 +34,10 @@ class Iscrizione:
 
 def main() -> None:
     print("=== GESTIONALE UNIVERSITA (RELAZIONE N:N) ===")
-    alice = Studente(1001, "Alice")
-    cs101 = Corso("CS101", "Architettura Software", 6)
+    alice: Studente = Studente(1001, "Alice")
+    cs101: Corso = Corso("CS101", "Architettura Software", 6)
 
-    iscrizione = Iscrizione(1, alice, cs101, "2026-10-01")
+    iscrizione: Iscrizione = Iscrizione(1, alice, cs101, "2026-10-01")
 
     print(f"Studente: {alice.nome} (Matricola {alice.matricola})")
     print(f"Corso: {cs101.codice_corso} ({cs101.titolo}, {cs101.cfu} CFU)\n")

@@ -41,9 +41,9 @@ class Mago(Personaggio):
 
 def main() -> None:
     print("=== SIMULAZIONE POLIMORFISMO IN BATTAGLIA ===")
-    conan = Guerriero(1, "Conan", forza=15)
-    merlino = Mago(2, "Merlino", mana=50)
-    orco = Personaggio(99, "Orco", punti_vita=100)
+    conan: Guerriero = Guerriero(1, "Conan", forza=15)
+    merlino: Mago = Mago(2, "Merlino", mana=50)
+    orco: Personaggio = Personaggio(99, "Orco", punti_vita=100)
 
     squadra: list[Personaggio] = [conan, merlino]
 

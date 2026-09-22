@@ -62,8 +62,8 @@ def carica_squadra(percorso: str) -> list[Personaggio]:
 def main() -> None:
     print("=== PERSISTENZA POLIMORFICA (CAMPO DISCRIMINATORE) ===")
     file_path = "squadra.json"
-    conan = Guerriero(1, "Conan", forza=12)
-    merlino = Mago(2, "Merlino", mana=45)
+    conan: Guerriero = Guerriero(1, "Conan", forza=12)
+    merlino: Mago = Mago(2, "Merlino", mana=45)
 
     salva_squadra([conan, merlino], file_path)
     print("Salvataggio su 'squadra.json' completato!\n")

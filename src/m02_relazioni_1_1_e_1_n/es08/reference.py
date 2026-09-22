@@ -24,8 +24,8 @@ class Squadra:
 
 def main() -> None:
     print("=== TEST INDIPENDENZA SQUADRE ===")
-    squadra_a = Squadra("Leoni")
-    squadra_b = Squadra("Aquile")
+    squadra_a: Squadra = Squadra("Leoni")
+    squadra_b: Squadra = Squadra("Aquile")
 
     squadra_a.aggiungi_giocatore(Giocatore(10, "Messi"))
 

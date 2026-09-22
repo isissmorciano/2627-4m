@@ -47,9 +47,9 @@ class Personaggio:
 
 def main() -> None:
     print("=== PRINCIPIO DI DELEGA (EROE -> ZAINO) ===")
-    eroe = Personaggio(1, "Aragorn")
-    pozione = Oggetto(10, "Pozione", "Cura")
-    spada = Oggetto(20, "Spada", "Arma")
+    eroe: Personaggio = Personaggio(1, "Aragorn")
+    pozione: Oggetto = Oggetto(10, "Pozione", "Cura")
+    spada: Oggetto = Oggetto(20, "Spada", "Arma")
 
     print(f"Eroe senza zaino tenta raccolta -> Esito: {eroe.raccogli_oggetto(pozione)}\n")
 

@@ -34,7 +34,7 @@ def carica_inventario(percorso: str) -> Inventario:
 def main() -> None:
     print("=== PERSISTENZA RELAZIONE 1:N (ZAINO E OGGETTI) ===")
     file_path = "inventario_test.json"
-    zaino = Inventario(id=101, capacita_slot=5)
+    zaino: Inventario = Inventario(id=101, capacita_slot=5)
     zaino.oggetti.append(Oggetto(1, "Spada", "Arma"))
     zaino.oggetti.append(Oggetto(2, "Pozione", "Cura"))
 

@@ -31,11 +31,11 @@ class ClasseScolastica:
 
 def main() -> None:
     print("=== GESTIONALE SCOLASTICO (1:N) ===")
-    classe = ClasseScolastica(sezione="4A Informatica", capienza_massima=25)
+    classe: ClasseScolastica = ClasseScolastica(sezione="4A Informatica", capienza_massima=25)
 
-    s1 = Studente(101, "Mario Rossi", 7.5)
-    s2 = Studente(102, "Anna Bianchi", 5.5)
-    s3 = Studente(103, "Luca Verdi", 8.0)
+    s1: Studente = Studente(101, "Mario Rossi", 7.5)
+    s2: Studente = Studente(102, "Anna Bianchi", 5.5)
+    s3: Studente = Studente(103, "Luca Verdi", 8.0)
 
     classe.iscrivi_studente(s1)
     classe.iscrivi_studente(s2)

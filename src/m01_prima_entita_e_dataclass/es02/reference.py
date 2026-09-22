@@ -16,9 +16,9 @@ class Personaggio:
 
 def main() -> None:
     print("=== TEST UGUAGLIANZA E RAPPRESENTAZIONE DATACLASS ===")
-    eroe_a = Personaggio(id=1, nome="Aragorn")
-    eroe_b = Personaggio(id=1, nome="Aragorn")
-    eroe_c = Personaggio(id=2, nome="Legolas")
+    eroe_a: Personaggio = Personaggio(id=1, nome="Aragorn")
+    eroe_b: Personaggio = Personaggio(id=1, nome="Aragorn")
+    eroe_c: Personaggio = Personaggio(id=2, nome="Legolas")
 
     print("Rappresentazione automatica eroe_a:")
     print(eroe_a)

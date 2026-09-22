@@ -26,7 +26,7 @@ class Inventario:
 
 def main() -> None:
     print("=== GESTIONE ZAINO (RELAZIONE 1:N) ===")
-    zaino = Inventario(id=1, capacita_slot=2)
+    zaino: Inventario = Inventario(id=1, capacita_slot=2)
     print(f"Zaino #1 creato (Capacita: {zaino.capacita_slot} slot | Oggetti iniziali: {zaino.conta_oggetti()})\n")
 
     es1 = zaino.aggiungi_oggetto(Oggetto(10, "Spada", "Arma"))

@@ -31,7 +31,9 @@ class TesseraAbbonamento:
 
 def main() -> None:
     print("=== SIMULAZIONE CONTROLLO ACCESSI TORNELLO ===")
-    tessera = TesseraAbbonamento(codice_tessera="CARD-555", titolare="Laura Verdi", ingressi_residui=2)
+    tessera: TesseraAbbonamento = TesseraAbbonamento(
+        codice_tessera="CARD-555", titolare="Laura Verdi", ingressi_residui=2
+    )
     print(
         f"Tessera {tessera.codice_tessera} (Titolare: {tessera.titolare}, Ingressi: {tessera.ingressi_residui}, Attiva: {tessera.is_attiva})\n"
     )

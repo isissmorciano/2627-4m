@@ -32,7 +32,7 @@ class CameraHotel:
 
 def main() -> None:
     print("=== TEST DIRETTO CAMERA HOTEL CORRETTA ===")
-    camera = CameraHotel(numero_camera=101, tipo="Doppia", tariffa_giornaliera=120.0)
+    camera: CameraHotel = CameraHotel(numero_camera=101, tipo="Doppia", tariffa_giornaliera=120.0)
     print(
         f"Camera {camera.numero_camera} ({camera.tipo}) | Tariffa: {camera.tariffa_giornaliera:.2f}€ | Occupata: {camera.is_occupata}\n"
     )

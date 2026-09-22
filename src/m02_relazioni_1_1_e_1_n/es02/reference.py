@@ -31,8 +31,8 @@ class Paziente:
 
 def main() -> None:
     print("=== GESTIONALE CLINICA (RELAZIONE 1:1) ===")
-    paz = Paziente("RSSMRA80A01H501U", "Mario Rossi")
-    cart = CartellaClinica(501, "Febbre persistente")
+    paz: Paziente = Paziente("RSSMRA80A01H501U", "Mario Rossi")
+    cart: CartellaClinica = CartellaClinica(501, "Febbre persistente")
 
     print(f"Paziente: {paz.nome} (CF: {paz.codice_fiscale})")
     print(f"Cartella #{cart.numero_cartella} (Diagnosi: {cart.diagnosi})\n")

@@ -13,15 +13,17 @@ class Veicolo:
 
 
 class Furgone(Veicolo):
-    def __init__(self, targa: str, marca: str, tariffa_base: float, capacita_carico_kg: int, motore: Motore | None = None) -> None:
+    def __init__(
+        self, targa: str, marca: str, tariffa_base: float, capacita_carico_kg: int, motore: Motore | None = None
+    ) -> None:
         super().__init__(targa, marca, tariffa_base, motore)
         self.capacita_carico_kg = capacita_carico_kg
 
 
 def main() -> None:
     print("=== ARCHITETTURA CORRETTA: HAS-A VS IS-A ===")
-    motore_diesel = Motore(2000, "Diesel")
-    furgone = Furgone("AB123CD", "Iveco", 80.0, capacita_carico_kg=1500, motore=motore_diesel)
+    motore_diesel: Motore = Motore(2000, "Diesel")
+    furgone: Furgone = Furgone("AB123CD", "Iveco", 80.0, capacita_carico_kg=1500, motore=motore_diesel)
 
     print(f"Furgone: {furgone.marca} (Targa {furgone.targa})")
     print(f"Carico massimo: {furgone.capacita_carico_kg} kg")
