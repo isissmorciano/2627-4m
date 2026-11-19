@@ -2,13 +2,13 @@
 
 Repository degli esercizi di **Ingegneria del Software e Programmazione a Oggetti** per la classe 4ª (Indirizzo Informatica e Telecomunicazioni).
 
-Il percorso adotta la metodologia professionale **Design-First**: il codice Python non è il punto di partenza, ma l'anello finale di una catena formale di analisi, modellazione e collaudo automatico.
+Il percorso adotta la metodologia professionale **Design-First**: nei percorsi di implementazione il codice Python non è il punto di partenza, ma l'anello finale di una catena formale di analisi, modellazione e collaudo automatico. Il modulo `m04` si concentra invece sulla sola modellazione.
 
 ---
 
 ## 🧭 La Catena Metodologica a 5 Stadi
 
-Ogni problema viene affrontato attraversando rigorosamente 5 fasi sequenziali:
+Nei percorsi di implementazione il problema viene affrontato attraverso 5 fasi sequenziali:
 
 ```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -35,9 +35,9 @@ Ogni problema viene affrontato attraversando rigorosamente 5 fasi sequenziali:
 
 ---
 
-## 🗂️ Articolazione dei Moduli (44 Esercizi)
+## 🗂️ Articolazione dei Moduli (52 Esercizi)
 
-Il corso è organizzato in 7 moduli progressivi:
+Il corso è organizzato in 8 moduli:
 
 | Modulo | Cartella | Argomenti Chiave | N° Esercizi |
 | :--- | :--- | :--- | :--- |
@@ -45,9 +45,10 @@ Il corso è organizzato in 7 moduli progressivi:
 | **`m01`** | `src/m01_prima_entita_e_dataclass/` | Prima entità: Primary Key (PK), classi tradizionali con `__init__`/`self`, passaggio a `@dataclass`, metodi di stato, invarianti di salute/saldo/magazzino. | **8** |
 | **`m02`** | `src/m02_relazioni_1_1_e_1_n/` | Due entità: Foreign Key (UNIQUE per 1:1, lato Molti per 1:N), Diagrammi di Sequenza, `default_factory=list`, Principio di Delega, aggregazioni carrello/scuola. | **8** |
 | **`m03`** | `src/m03_relazioni_nn_ed_ereditarieta/` | Relazioni N:N con Entità di Raccordo (doppia FK e dati propri), Ereditarietà IS-A con `super()`, Override e Polimorfismo a runtime. | **8** |
-| **`m04`** | `src/m04_persistenza_dati_json/` | RAM vs Disco: serializzazione con `asdict()`, deserializzazione e ricostruzione grafi di oggetti vivi, campo discriminatore polimorfico, test round-trip con `tmp_path`. | **4** |
-| **`m05`** | `src/m05_architettura_c4_model/` | Visione di Sistema pre-progetto: C4 Livello 1 (System Context: utenti e API esterne) e Livello 2 (Container: Frontend, Backend Python, Database, Storage). | **6** |
-| **`m06`** | `src/m06_progetti_sintesi_design_first/` | Progetti di sintesi completi in sottocartelle dedicate: 1 estensione guidata (RPG) + 3 tracce di business (Centro Sportivo, Flotta Veicoli, Corsi Palestra). | **4** |
+| **`m04`** | `src/m04_modellazione_er_uml/` | Esercizi di modellazione ER e UML a complessità crescente, senza implementazione. | **8** |
+| **`m05`** | `src/m05_persistenza_dati_json/` | RAM vs Disco: serializzazione con `asdict()`, deserializzazione e ricostruzione grafi di oggetti vivi, campo discriminatore polimorfico, test round-trip con `tmp_path`. | **4** |
+| **`m06`** | `src/m06_architettura_c4_model/` | Visione di Sistema pre-progetto: C4 Livello 1 (System Context: utenti e API esterne) e Livello 2 (Container: Frontend, Backend Python, Database, Storage). | **6** |
+| **`m07`** | `src/m07_progetti_sintesi_design_first/` | Progetti di sintesi completi in sottocartelle dedicate: 1 estensione guidata (RPG) + 3 tracce di business (Centro Sportivo, Flotta Veicoli, Corsi Palestra). | **4** |
 
 ---
 
@@ -61,7 +62,9 @@ All'interno di ciascun modulo, ogni esercizio ha una cartella `esXX/` con una st
 - `reference.md`: Soluzione modello del docente per i diagrammi Mermaid.
 - `reference.py`: Soluzione modello del docente per il codice Python.
 
-Nei progetti finali (`m06`), ogni cartella di progetto racchiude l'intera suite: `description.md`, `design_student.md`, `modello_student.py`, `gestore_student.py` e i rispettivi file `_reference`.
+Nei progetti finali (`m07`), ogni cartella di progetto racchiude l'intera suite: `description.md`, `design_student.md`, `modello_student.py`, `gestore_student.py` e i rispettivi file `_reference`.
+
+Nel modulo `m04`, dedicato esclusivamente alla modellazione, ogni esercizio contiene `description.md`, `student.md` e `reference.md`; non sono richiesti codice, diagrammi di sequenza o test. Gli esercizi crescono da 3 a 10 entità/classi.
 
 ---
 
@@ -101,20 +104,20 @@ I test verificano che l'implementazione dello studente soddisfi rigorosamente i 
   pytest tests/test_m01_entita
   pytest tests/test_m02_relazioni
   pytest tests/test_m03_espansione
-  pytest tests/test_m04_persistenza
-  pytest tests/test_m06_progetti
+  pytest tests/test_m05_persistenza
+  pytest tests/test_m07_progetti
   ```
 
 * **Eseguire i test di un singolo esercizio:**
   ```bash
   pytest tests/test_m01_entita/test_es01.py
   pytest tests/test_m02_relazioni/test_es04.py
-  pytest tests/test_m06_progetti/test_p01.py
+  pytest tests/test_m07_progetti/test_p01.py
   ```
 
 * **Eseguire tutti i test dello studente dell'intero anno:**
   ```bash
-  pytest tests/test_m01_entita tests/test_m02_relazioni tests/test_m03_espansione tests/test_m04_persistenza tests/test_m06_progetti
+  pytest tests/test_m01_entita tests/test_m02_relazioni tests/test_m03_espansione tests/test_m05_persistenza tests/test_m07_progetti
   ```
 
 ---
@@ -128,13 +131,13 @@ I test reference verificano le soluzioni complete del docente (`esXX_reference.p
   pytest tests/test_m01_entita_reference
   pytest tests/test_m02_relazioni_reference
   pytest tests/test_m03_espansione_reference
-  pytest tests/test_m04_persistenza_reference
-  pytest tests/test_m06_progetti_reference
+  pytest tests/test_m05_persistenza_reference
+  pytest tests/test_m07_progetti_reference
   ```
 
 * **Eseguire tutti i test reference dell'anno:**
   ```bash
-  pytest --import-mode=importlib tests/test_m01_entita_reference tests/test_m02_relazioni_reference tests/test_m03_espansione_reference tests/test_m04_persistenza_reference tests/test_m06_progetti_reference
+  pytest --import-mode=importlib tests/test_m01_entita_reference tests/test_m02_relazioni_reference tests/test_m03_espansione_reference tests/test_m05_persistenza_reference tests/test_m07_progetti_reference
   ```
 
 
