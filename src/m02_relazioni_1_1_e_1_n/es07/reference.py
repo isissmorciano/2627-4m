@@ -42,7 +42,10 @@ def main() -> None:
     print(f"Incasso massimo potenziale: {hotel.incasso_massimo_giornaliero():.2f}€\n")
 
     assegnata = hotel.prenota_camera("Doppia")
-    print(f"Prenotazione Doppia -> Assegnata camera #{assegnata.numero}")
+    if assegnata is not None:
+        print(f"Prenotazione -> Assegnata camera #{assegnata.numero}")
+    else:
+        print("Prenotazione -> Nessuna camera disponibile")
     print(f"Camere libere rimaste: {hotel.conta_camere_libere()}/3")
 
 

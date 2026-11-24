@@ -39,8 +39,9 @@ def main() -> None:
 
     esito = paz.assegna_cartella(cart)
     print(f"Assegnazione cartella -> Esito: {esito}")
-    print(f"Verifica: {paz.nome} ha la cartella #{paz.cartella.numero_cartella}")
-    print(f"Verifica: La cartella appartiene a {cart.paziente.nome}\n")
+    if paz.cartella is not None and cart.paziente is not None:
+        print(f"Verifica: {paz.nome} ha la cartella #{paz.cartella.numero_cartella}")
+        print(f"Verifica: La cartella appartiene a {cart.paziente.nome}\n")
 
     esito_doppio = paz.assegna_cartella(CartellaClinica(502, "Altro"))
     print(f"Tentativo seconda assegnazione su stesso paziente -> Esito: {esito_doppio}\n")
